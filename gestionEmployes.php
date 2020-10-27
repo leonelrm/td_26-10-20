@@ -32,8 +32,48 @@
         </ul>
     </div>
 </nav>
+<div class="container">
+    <form class="container-sm">
+        <div class="form-row">
 
+        <h1>Profile</h1>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for=""> </label>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="prenom">Prenom</label>
+                <input type="text" class="form-control" id="prenom">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="dateNaissance">Date</label>
+                <input type="date" class="form-control" id="dateNaissance">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+            <label for="photo"> </label>
+            <input type="file" class="form-control" id="photo" placeholder="Choisissez votre photo">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="function">Function</label>
+                <input type="text" class="form-control" id="function">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="salaire">Salaire</label>
+                <input type="text" class="form-control" id="salaire">
+            </div>
+        </div>
 
+    <button type="submit" class="btn btn-primary" id="enregistrer">Enregistrer</button>
+    <button type="submit" class="btn btn-danger" id="reset">Reset</button>
+</form>
+</div>
 
 
 <footer class="container-fluid  bg-dark ">
@@ -43,7 +83,7 @@
         <a class="icon" href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
         <a class="icon" href="https://www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
     </div>
-</nav>
+    </nav>
 
 
 
@@ -55,3 +95,4 @@
 <script src="public/js/bootstrap.min.js"></script>
 </body>
 </html>
+

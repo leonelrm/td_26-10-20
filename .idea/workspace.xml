@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/employes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../POO-POKEMON" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
@@ -51,17 +51,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="aws" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="53e2f627-b1a7-4dfa-bfa7-5b83cc034776" server_name="apache" start_url="/td_26-10-20">
       <method v="2">
         <option name="FtpUpload" enabled="true">
@@ -84,6 +73,7 @@
       <workItem from="1603431150724" duration="5131000" />
       <workItem from="1603596954173" duration="2496000" />
       <workItem from="1603618106219" duration="29805000" />
+      <workItem from="1603983680619" duration="533000" />
     </task>
     <servers />
   </component>
@@ -120,10 +110,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="714" y="248" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1603617985708" />
-    <state x="-1020" y="101" key="FileChooserDialogImpl" timestamp="1603433902528">
-      <screen x="-1600" y="-95" width="1600" height="860" />
+    <state x="557" y="188" key="FileChooserDialogImpl" timestamp="1603984211667">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1020" y="101" key="FileChooserDialogImpl/0.0.1536.824/-1600.-95.1600.860@-1600.-95.1600.860" timestamp="1603433902528" />
+    <state x="557" y="188" key="FileChooserDialogImpl/0.0.1536.824/-1600.-95.1600.860@0.0.1536.824" timestamp="1603984211667" />
     <state x="609" y="334" key="NewPhpFileDialog" timestamp="1603725283964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

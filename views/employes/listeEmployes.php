@@ -28,18 +28,18 @@ include_once '../../pages/header.php';
                 </tr>
             </thead>
             <tbody class="bg-teal">
-            <?php foreach($listeEmployes as $ligne) {?>
+            <?php foreach($listeEmployes as $employes) {?>
                 <tr>
-                    <td><?php echo $ligne['id_employes'];?></td>
-                    <td><?php echo $ligne['prenom'];?></td>
-                    <td><?php echo $ligne['date_naissance'];?></td>
-                    <td><?php echo $ligne['function'];?></td>
-                    <td><?php echo $ligne['email'];?></td>
-                    <td><?php echo $ligne['salaire'];?></td>
+                    <td><?php echo $employes['id_employes'];?></td>
+                    <td><?php echo $employes['prenom'];?></td>
+                    <td><?php echo $employes['date_naissance'];?></td>
+                    <td><?php echo $employes['function'];?></td>
+                    <td><?php echo $employes['email'];?></td>
+                    <td><?php echo $employes['salaire'];?></td>
                     <td>&nbsp;&nbsp;
-                        <a href="../../controllers/employes/employesChercher.php?idEmployes=<?php echo $listeEmployes['id_employes']; ?>&traitement=2"><button class="btn"><i style="color:darkblue;"class="fas fa-user-edit"></i>&nbsp;&nbsp</button></a>&nbsp;&nbsp;
-                        <a href="../../controllers/employes/employesChercher.php?idEmployes=<?php echo $listeEmployes['id_employes']; ?>&traitement=3"><button class="btn"><i style="color:darkred;" class="fas fa-user-times"></i>&nbsp;&nbsp</button></a>&nbsp;&nbsp;
-                        <a href="../../controllers/employes/employesChercher.php?idEmployes=<?php echo $listeEmployes['id_employes']; ?>&traitement=1"><button class="btn"><i style="color:yellowgreen;"class="fas fa-info"></i>&nbsp</button></a>
+                        <a href="../../controllers/employes/employesChercher.php?idEmployes=<?php echo $employes['idEmployes']; ?>&traitement=2"><button class="btn"><i style="color:darkblue;"class="fas fa-user-edit"></i>&nbsp;&nbsp</button></a>&nbsp;&nbsp;
+                        <a href="../../controllers/employes/employesChercher.php?idEmployes=<?php echo $employes['idEmployes']; ?>&traitement=3"><button class="btn"><i style="color:darkred;" class="fas fa-user-times"></i>&nbsp;&nbsp</button></a>&nbsp;&nbsp;
+                        <a href="../../controllers/employes/employesChercher.php?idEmployes=<?php echo $employes['idEmployes']; ?>&traitement=1"><button class="btn"><i style="color:yellowgreen;"class="fas fa-info"></i>&nbsp</button></a>
                     </td>
                 </tr>
                 <?php

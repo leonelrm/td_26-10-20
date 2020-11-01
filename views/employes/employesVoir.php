@@ -1,8 +1,7 @@
 
 <?php
-require_once("../../models/employes/employesModel.php");
 session_start();
-
+$idEmployes = $_GET['idEmployes'];
 
 
 
@@ -25,15 +24,15 @@ include_once '../../pages/header.php';
         <div class="container">
             <div class=" col-md-4">
                 <label for="prenom"></label>
-                <input type="text" class="" id="prenom" name="prenom" value="<?php echo $employes['prenom']; ?>" disabled>
+                <input type="text" class="" id="prenom" name="prenom" value="<?php echo $idEmployes['prenom']; ?>" disabled>
             </div>
             <div class=" col-md-4">
                 <label for="function"></label>
-                <input type="text"  id="email" name="function" value="<?php  echo $employes['function']; ?>" disabled>
+                <input type="text"  id="email" name="function" value="<?php  echo $idEmployes['function']; ?>" disabled>
             </div>
             <div class="col-md-4">
                 <label for="email"></label>
-                <input type="text" class="" id="email" name="email" value="<?php  echo $employes['email']; ?>" disabled>
+                <input type="text" class="" id="email" name="email" value="<?php  echo $idEmployes['email']; ?>" disabled>
             </div>
         </div>
     </div>

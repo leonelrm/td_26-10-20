@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../../css/main.css" />
 	<?php
 		session_start();
-		$typeMonument = $_SESSION['typemonument'];
+		$employes = $_SESSION['employes'];
 	?>
 </head>
 <body>

@@ -45,8 +45,8 @@
 		// sécurisation des données
 
 		$vPrenom = filter_var($prenom, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-		$vDateNaissance = filter_var($dateNaissance, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-		$vFunction = filter_var($function, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+		$vDateNaissance = $dateNaissance;
+		$vFunction = $function;
 		$vEmail = filter_var($email, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 		$vSalaire = filter_var($salaire, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 		$vIdEmployes = '';
@@ -62,7 +62,7 @@
 			// bind parameters
 			$stmt->bindParam(':vIdEmployes', $vIdEmployes, PDO::PARAM_INT);
 			$stmt->bindParam(':vPrenom', $vPrenom, PDO::PARAM_STR);
-			$stmt->bindParam(':vDateNaissance', $vDateNaissance, PDO::PARAM_INT);
+			$stmt->bindParam(':vDateNaissance', $vDateNaissance, PDO::PARAM_STR);
 			$stmt->bindParam(':vFunction', $vFunction, PDO::PARAM_STR);
 			$stmt->bindParam(':vEmail', $vEmail, PDO::PARAM_STR);
 			$stmt->bindParam(':vSalaire', $vSalaire, PDO::PARAM_INT);
@@ -85,7 +85,7 @@
 	
 	function employes_Update( $prenom, $dateNaissance, $function, $email, $salaire ) {
 		
-		$vMonumentId = $id;
+		$vIdEmployes = $id;
 	
 		// sécurisation des données
         $vPrenom = filter_var($prenom, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -158,7 +158,7 @@
 		$cnx = null;			
 	}
 	
-	function monument_findAll(){
+	function employes_findAll(){
 
 		//preparation de la requete d'extraction de tous les enregistrements
 		$reqSql = "select * from employes";

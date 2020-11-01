@@ -1,8 +1,9 @@
 <?php
     require_once("../../models/employes/employesModel.php");
     session_start();
-
     $listeEmployes = employes_findAll();
+
+
 
     include_once '../../pages/header.php';
 ?>
@@ -34,7 +35,7 @@
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="photo"> </label>
-                    <input type="file" class="form-control" id="photo" name="photo" placeholder="Choisissez votre photo">
+                    <input type="file" class="form-control" id="photoUpload" name="photo" placeholder="Choisissez votre photo">
                 </div>
                 <div class="form-group col-md-3">
                     <label for="email">Email</label>

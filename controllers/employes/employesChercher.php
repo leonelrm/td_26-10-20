@@ -5,7 +5,7 @@ session_start();
 //recuperation de l'id de employer a chercher
 $id= $_GET['idEmployes'];
 $traitement = $_GET['traitement'];
-$_SESSION['idEmployes']= $id;
+
 //recuperation de type monument
 $employes= employes_find($id);
 
@@ -13,13 +13,13 @@ $employes= employes_find($id);
 $_SESSION['employes'] = $employes;
 
 if($traitement == 1){
-    Header('Location: ../../views/monument/frmEmployesVoir.php');
+    Header('Location: ../../views/employes/employesVoir.php');
 } else{
     if($traitement == 2){
-        Header('Location: ../../views/monument/frmEmployesModifier.php');
+        Header('Location: ../../views/employes/employesModifier.php');
     }else{
         if($traitement == 3){
-            Header('Location: ../../views/monument/frmEmployesSupprimer.php');
+            Header('Location: ../../views/employes/employesSupprimer.php');
         }
     }
 }
